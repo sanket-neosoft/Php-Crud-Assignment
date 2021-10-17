@@ -1,0 +1,113 @@
+.body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    object-fit: cover;
+    object-position: center;
+}
+
+.wel-logo {
+    height: 150px;
+    width: 360px;
+}
+
+.form-si {
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+}
+
+.form {
+    width: 100%;
+    max-width: 630px;
+    margin: auto;
+}
+
+.vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .5s;
+}
+
+.page_content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all .5s;
+}
+
+#sidebar.active {
+    margin-left: -12rem;
+}
+
+#content.active {
+    width: calc(100% - 12rem);
+    margin-left: 5rem;
+}
+
+.yellow {
+    color: #ffc107;
+}
+
+.padding-10 {
+    padding: 10%;
+}
+
+.td {
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        position: relative;
+        width: 98%;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        margin: auto;
+        margin-top: 25%;
+    }
+
+    .form-si, .form {
+        max-width: 420px;
+    }
+
+    .login-logo {
+        display: none;
+    }
+
+    #sidebar {
+        margin-left: -17rem;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    #content {
+        width: 100%;
+        margin: 0;
+    }
+
+    #content.active {
+        margin-left: 17rem;
+        width: calc(100% - 17rem);
+    }
+
+    .page_section {
+        height: 100%;
+        margin-top: 15%;
+    }
+}
